@@ -1,0 +1,12 @@
+AK TV 2.2 update
+
+- Refined the AK TV app mark used by the launcher, home header, and splash screen.
+- Kept the existing glass UI and softened focus scaling for smoother TV navigation.
+- Added a home-screen channel search that filters channel names and categories.
+- Kept the in-player channel guide search.
+- Added V1 (website home) and V2 (website /v2) shortcuts.
+- Playback now selects HLS for .m3u8, DASH for .mpd/ClearKey DRM, and progressive playback for other direct media URLs.
+- Handles string and object-shaped source entries and iframe embed snippets returned by the channel API.
+- Made search controls use neutral glass styling instead of the red live-pill background.
+
+Build: GitHub Actions workflow builds arm32 and arm64 debug APKs. Live playback still depends on the channel API, upstream servers, and embed permissions; this environment could not reach the site's channel API to perform end-to-end stream tests.
